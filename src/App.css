@@ -1,3 +1,4 @@
+/* Estilos padrão para todas as telas */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,4 +11,24 @@ body,
 #root {
   width: 100%;
   height: 100%;
+}
+
+/* Estilos para telas maiores, como desktops */
+@media (min-width: 769px) {
+  /* Adicione os estilos desejados para telas maiores aqui */
+}
+@media (max-width: 768px) {
+  /* Centralize os componentes do produto */
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Se necessário, ajuste o tamanho ou o espaçamento dos componentes para que eles fiquem centralizados */
+  .product {
+    /* Adicione estilos específicos para cada produto se necessário */
+  }
 }
