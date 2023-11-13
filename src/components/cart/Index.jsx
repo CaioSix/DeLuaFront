@@ -2,6 +2,7 @@ import { useSelector  } from "react-redux";
 import CartItem from '../cart-item/index'
 import * as Styles from "./styles";
 import { selectProductTotalPrice } from "../../redux/cart/cart.selectors";
+import Button from "../custom-button";
 
 const Cart = ({ isVisible, setIsVisible }) => {
   const handleEscapeAreaClick = () => setIsVisible(false);
@@ -20,6 +21,7 @@ const Cart = ({ isVisible, setIsVisible }) => {
         <Styles.CartTotal>
             R$ {valoresTotais}
         </Styles.CartTotal>
+        <Button />
       </Styles.CartContent>
     </Styles.CartContainer>
   );

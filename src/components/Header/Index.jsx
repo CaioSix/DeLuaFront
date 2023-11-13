@@ -36,7 +36,7 @@ const handleCartClick = () => {
       <Logo>DeLua Resina</Logo>
       <Buttons>      
         
-        {/* {currentUser ? <div onClick={handleLogoutClick}>Sair</div> : <div onClick={handleLoginClick}>Login</div> } */}
+        {currentUser ? <div onClick={handleLogoutClick}>Sair</div> : <div onClick={handleLoginClick}>Login</div> }
         <div onClick={handleCartClick}>Carrinho({productsCount})</div>
       </Buttons>
 

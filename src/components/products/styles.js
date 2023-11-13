@@ -13,4 +13,26 @@ export const Container = styled.div`
     justify-items: start;
     grid-row-gap: 20px;
   }
+
+  
+
+
+`;
+
+
+export const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+
+  div {
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:nth-child(1) {
+      margin-right: 40px;
+    }
+  }
 `;
